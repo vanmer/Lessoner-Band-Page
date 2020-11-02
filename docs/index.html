@@ -15,21 +15,21 @@
 
             <div class="grid-item card" id="bandcamp">
                 <a href="https://lessoner.bandcamp.com/">
-                    <h2 class="card-name">lessoner</h2>
-                    <img class="fill" src="img/lessoner-three.JPG" alt="">
+                    <h2 class="card-name anim1">lessoner</h2>
+                    <img class="fill" src="img/lessoner-three.png" alt="">
                 </a>
             </div>
 
             <div class="grid-item card" id="live">
                 <a href="https://www.youtube.com/watch?v=oX8tDMJqMxc">
-                    <h2 class="card-name">arche mimikry <br>live session</h2>
+                    <h2 class="card-name anim1">arche mimikry <br>live session</h2>
                     <img class="fill" src="img/lessoner-live-2.png" alt="">
                 </a>
             </div>
 
             <div class="grid-item card" id="merch">
                 <a href="https://lessoner.bandcamp.com/merch">
-                    <h2 class="card-name">merch</h2>
+                    <h2 class="card-name anim1">merch</h2>
                     <img class="fill" src="img/Mimikry-petrol.jpg" alt="">
                 </a>
             </div>
@@ -70,7 +70,7 @@
                 </div>
 
                 <div id="contact">
-                    <a href="mailto:lessoner.band@gmail.com?body=Howdy Lessoner!"">
+                    <a href="mailto:lessoner.band@gmail.com?body=Howdy Lessoner!">
                 <h2 class="icon"><i class=" fa fa-envelope"></i></h2>
                     </a>
                 </div>
@@ -80,6 +80,33 @@
 
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"
+        integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA=="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        gsap.from('img', {
+            duration: 1,
+            y: -70,
+            opacity: 0,
+            stagger: 0.8,
+            delay: 0.1
+        });
+        gsap.from('.anim1', {
+            opacity: 0,
+            duration: 1,
+            y: -50,
+            delay: 1.4
+        });
+        gsap.from('.icon', {
+            opacity: 0,
+            duration: 1,
+            y: 50
+        })
+    </script>
 </body>
-
 </html>
