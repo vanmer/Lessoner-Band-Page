@@ -36,6 +36,13 @@ img {
     z-index: -2;
 }
 
+video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+}
+
 .middle {
     opacity: 1;
     position: absolute;
@@ -60,12 +67,18 @@ img {
     align-items: center;
     overflow: hidden;
 }
+
 .fill img {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100vh;
 }
 
+.fill video {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100vh;
+}
 
 .grid-container {
     display: grid;
@@ -75,7 +88,9 @@ img {
     
     .grid-item {
       height: 100vh;
-
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100vh
     }
 }
 

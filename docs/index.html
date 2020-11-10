@@ -16,7 +16,7 @@
             <div class="grid-item card" id="bandcamp">
                 <a href="https://lessoner.bandcamp.com/">
                     <h2 class="card-name anim1">lessoner</h2>
-                    <img class="fill" src="img/lessoner-three.png" alt="">
+                    <img class="fill" src="img/lessoner-two.png" alt="">
                 </a>
             </div>
 
@@ -30,7 +30,11 @@
             <div class="grid-item card" id="merch">
                 <a href="https://lessoner.bandcamp.com/merch">
                     <h2 class="card-name anim1">merch</h2>
-                    <img class="fill" src="img/Mimikry-petrol.jpg" alt="">
+                    <video autoplay loop muted class="fill">
+                        <source src="video/mimikry-animation.mp4">
+                        <img src="img/Mimikry-petrol.jpg" alt="kinetic-typography">
+                      </video>
+                    <!-- <img class="fill" src="img/Mimikry-petrol.jpg" alt=""> -->
                 </a>
             </div>
 
@@ -84,6 +88,7 @@
         integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
         crossorigin="anonymous">
     </script>
+
     <script>
         var tl = gsap.timeline({
             defaults: {
@@ -99,6 +104,11 @@
                 y: -50,
                 stagger: 0.8,
             }, "-=1.5")
+            .from(".footer", {
+                opacity: 0,
+                y: 50,
+                
+            })
     </script>
 </body>
 
