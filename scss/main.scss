@@ -31,10 +31,31 @@ a {
 
 img {
     width: 100%;
-    
     object-fit: cover;
     z-index: -1;
 }
+
+.fade {
+    opacity: 0.8;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+
+
+// .image {
+//     opacity: 1;
+//     display: block;
+//     width: 100%;
+//     height: auto;
+//     transition: 0.5s ease;
+//     backface-visibility: hidden;
+//     object-fit: cover;
+//   }
 
 .full-height {
     height: 100vh;
@@ -70,7 +91,7 @@ video {
     width: 100%;
 
     &:hover {
-        color: $fourth-color;
+        color: $fifth-color;
     }
 }
 
