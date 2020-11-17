@@ -14,51 +14,42 @@
     <div class="grid-container">
       <div class="grid-item card" id="bandcamp">
         <a href="https://lessoner.bandcamp.com/">
-          <h2 class="card-name center anim1 rellax" data-rellax-speed="2" data-rellax-percentage="1">lessoner</h2>
-          <img class="fill" src="img/lessoner-three.png" alt="" />
+          <h2 class="card-name middle rellax" data-rellax-speed="2" data-rellax-percentage="1.5">lessoner</h2>
+          <img class="fill full-height" src="img/lessoner-three.png" alt="" />
         </a>
       </div>
 
-      <div class="grid-item card" id="artwork">
-        <!-- <h2 class="card-name dark-color anim1">exzenter</h2> -->
-        <img src="img/exzenter-Version1.jpg" alt="" />
+      <div class="grid-item card" id="exzenter">
+        <img class="fill" src="img/exzenter-Version1.jpg" alt="" />
       </div>
 
       <div class="grid-item card" id="live">
         <a href="https://www.youtube.com/watch?v=oX8tDMJqMxc">
-          <h2 class="card-name center anim1 rellax" data-rellax-speed="2" data-rellax-percentage="2.5">arche<br />mimikry <br />live<br />session</h2>
-          <img class="fill" src="img/lessoner-live-2.png" alt="" />
+          <h2 class="card-name middle rellax" data-rellax-speed="2" data-rellax-percentage="2.5">arche<br />mimikry <br />live<br />session</h2>
+          <img class="fill full-height" src="img/lessoner-live-2.png" alt="" />
         </a>
       </div>
 
       <div class="grid-item card" id="merch">
         <a href="https://lessoner.bandcamp.com/merch">
-          <h2 class="card-name center anim1 rellax" data-rellax-speed="2" data-rellax-percentage="1.5">merch</h2>
-          <video autoplay loop muted class="fill">
-            <source src="video/mimikry-animation.mp4" />
-            <img src="img/Mimikry-petrol.jpg" alt="kinetic-typography" />
-          </video>
-          <!-- <img class="fill" src="img/Mimikry-petrol.jpg" alt=""> -->
+          <h2 class="card-name middle rellax" data-rellax-speed="2" data-rellax-percentage="2.5">merch</h2>
+          <img class="fill full-height" src="img/lessoner-merch.jpg" alt="" />
         </a>
       </div>
 
       <div class="grid-item card" id="morgana">
-        <a href="https://lessoner.bandcamp.com/album/morgana">
-          <!-- <h2 class="card-name anim1">morgana</h2> -->
+        <a href="https://open.spotify.com/album/7eyLVtALC8x6b7NmbBx2or">
           <img class="fill" src="img/morgana-cover.jpg" alt="" />
         </a>
       </div>
 
       <div class="grid-item card" id="contact">
         <a href="mailto:lessoner.band@gmail.com?body=Howdy Lessoner!">
-          <h2 class="card-name center anim1 rellax" data-rellax-speed="2"  data-rellax-percentage="2.5">contact</h2>
-          <img class="fill" src="img/lessoner-one.png" alt="" />
+          <h2 class="card-name middle rellax" data-rellax-speed="2"  data-rellax-percentage="2.5">contact</h2>
+          <img class="fill full-height" src="img/lessoner-one.png" alt="" />
         </a>
       </div>
 
-      <!-- <div class="grid-item card" id="artwork">
-                <img src="img/lessoner-artwork-green.png" alt="">
-            </div> -->
 
       <div class="footer" id="social">
         <div id="spotify">
@@ -85,11 +76,6 @@
           </a>
         </div>
 
-        <!-- <div id="contact">
-                    <a href="mailto:lessoner.band@gmail.com?body=Howdy Lessoner!">
-                        <h2 class="icon"><i class=" fa fa-envelope"></i></h2>
-                    </a>
-                </div> -->
       </div>
     </div>
   </div>
@@ -99,27 +85,27 @@
     crossorigin="anonymous"></script>
 
   <script>
-    var tl = gsap.timeline({
-      defaults: {
-        duration: 1,
-      },
-    });
-    tl.from("img", {
-        opacity: 0,
-        stagger: 0.8,
-      })
-      .from(
-        ".anim1", {
-          opacity: 0,
-          // y: -50,
-          stagger: 0.8,
-        },
-        "-=1.5"
-      )
-      .from(".footer", {
-        opacity: 0,
-        y: 50,
-      });
+    // var tl = gsap.timeline({
+    //   defaults: {
+    //     duration: 1,
+    //   },
+    // });
+    // tl.from("img", {
+    //     opacity: 0,
+    //     stagger: 0.8,
+    //   })
+    //   .from(
+    //     ".anim1", {
+    //       opacity: 0,
+    //       // y: -50,
+    //       stagger: 0.8,
+    //     },
+    //     "-=1.5"
+    //   )
+    //   .from(".footer", {
+    //     opacity: 0,
+    //     y: 50,
+    //   });
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
@@ -127,7 +113,7 @@
     crossorigin="anonymous"></script>
 
   <script>
-    var rellax = new Rellax('.rellax');
+    // var rellax = new Rellax('.rellax');
   </script>
 </body>
 

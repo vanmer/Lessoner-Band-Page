@@ -31,9 +31,13 @@ a {
 
 img {
     width: 100%;
-    height: 100vh;
+    
     object-fit: cover;
     z-index: -1;
+}
+
+.full-height {
+    height: 100vh;
 }
 
 video {
@@ -46,18 +50,21 @@ video {
 .middle {
     opacity: 1;
     position: absolute;
-    top: 50vh;
-    left: 50vw;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     width: 33rem;
 }
 
+.card {
+    position: relative;
+}
+
 .card-name {
     position: absolute;
     font-size: 5rem;
-    // padding: 2rem 0 0 1rem;
     line-height: 1;
     margin: auto;
     width: 100%;
@@ -67,7 +74,6 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 12.5rem;
   }
 
 .fill {
@@ -97,11 +103,8 @@ video {
     width: 100%;
     
     .grid-item {
-      height: 100vh;
       flex-shrink: 0;
       min-width: 100%;
-      min-height: 100vh;
-
     }
 }
 
@@ -115,7 +118,7 @@ video {
     .icon {
         font-size: 2.8rem;
         color: $third-color;
-        padding: 0 1rem;
+        padding: 0 1.8rem;
     }
 }
 
