@@ -45,18 +45,6 @@ img {
     }
 }
 
-
-
-// .image {
-//     opacity: 1;
-//     display: block;
-//     width: 100%;
-//     height: auto;
-//     transition: 0.5s ease;
-//     backface-visibility: hidden;
-//     object-fit: cover;
-//   }
-
 .full-height {
     height: 100vh;
 }
@@ -120,6 +108,11 @@ video {
     min-height: 100vh;
 }
 
+.filter:hover {
+    filter: brightness(130%);
+    // filter: blur(0.15rem);
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -151,8 +144,5 @@ video {
     }
 }
 
-.dark-color {
-    color: $fifth-color;
-}
 
 @import "media";
