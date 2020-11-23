@@ -2,10 +2,19 @@
     .card-name {
         font-size: 7rem;
     }
+    .footer .icon {
+        font-size: 4rem;
+        padding: 0 3rem;
+    }
 }
 
 @media (min-width: 1200px) {
     .card-name {
-        font-size: 14rem;
+        font-size: 12rem;
+    }
+
+    .footer .icon {
+        font-size: 4rem;
+        padding: 0 8rem;
     }
 }
