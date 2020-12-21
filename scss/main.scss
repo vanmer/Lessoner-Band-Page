@@ -108,6 +108,10 @@ video {
     min-height: 100vh;
 }
 
+.dark-filter {
+    filter:brightness(85%);
+}
+
 .filter:hover {
     filter: brightness(130%);
     // filter: blur(0.15rem);
