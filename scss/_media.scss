@@ -1,20 +1,39 @@
-@media (min-width: 780px) {
+@media only screen and (max-width: 1030px) {
     .card-name {
         font-size: 7rem;
     }
-    .footer .icon {
-        font-size: 4rem;
-        padding: 0 3rem;
+
+    .footer {
+        .icon {
+            font-size: 5rem;
+            padding: 0 3.15rem;
+        }
     }
 }
 
-@media (min-width: 1200px) {
+@media only screen and (max-width: 780px) {
     .card-name {
-        font-size: 12rem;
+        font-size: 5.5rem;
     }
-
     .footer .icon {
         font-size: 4rem;
-        padding: 0 8rem;
+        padding: 0 2.5rem;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .fallback {
+        display: block;
+    }
+    .video {
+        display: none;
+    }
+    .card-name {
+        font-size: 4.5rem;
+    }
+    .footer .icon {
+        font-size: 3rem;
+        padding: 0 1.4rem;
+    }
+}
+

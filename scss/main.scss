@@ -73,7 +73,7 @@ video {
 
 .card-name {
     position: absolute;
-    font-size: 5rem;
+    font-size: 8rem;
     line-height: 1;
     margin: auto;
     width: 100%;
@@ -113,6 +113,10 @@ video {
     // filter: blur(0.15rem);
 }
 
+.fallback {
+    display: none;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -134,9 +138,9 @@ video {
     background: $primary-color;
 
     .icon {
-        font-size: 3rem;
+        font-size: 5rem;
         color: $third-color;
-        padding: 0 1.8rem;
+        padding: 0 7rem;
 
         &:hover {
             color: $fourth-color;
