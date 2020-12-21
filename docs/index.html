@@ -107,14 +107,19 @@
       })
       .from(".fill", {
         ease: "circ.out",
-        opacity: 0,
-        y: 275,
-        // x: 4000,
-        stagger: 0.8,
+        // opacity: 0,
+        // y: 275,
+        x: 4000,
+        stagger: 0.6,
       })
-      .from(".footer", {
+      // .from(".footer", {
+      //   opacity: 0,
+      // })
+      .from(".icon", {
         opacity: 0,
-      });
+        stagger: 0.2
+      })
+      ;
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
