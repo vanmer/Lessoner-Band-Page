@@ -1,4 +1,5 @@
 @import "config";
+@import "cursor";
 
 * {
     margin: 0;
@@ -9,6 +10,7 @@ html,
 body {
   overflow-x: hidden;
   background: $primary-color;
+  cursor: none;
 }
 
 html {
@@ -18,6 +20,7 @@ html {
 body {
     position: relative;
     font-family: $font-stack;
+    cursor: none;
 }
 
 h1, h2 {
@@ -78,9 +81,9 @@ video {
     margin: auto;
     width: 100%;
 
-    &:hover {
-        color: $fourth-color;
-    }
+    // &:hover {
+    //     color: $fourth-color;
+    // }
 }
 
 .center {
