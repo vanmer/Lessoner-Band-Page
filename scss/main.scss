@@ -32,6 +32,7 @@ a {
     text-decoration: none;
 }
 
+
 img {
     width: 100%;
     object-fit: cover;
@@ -81,9 +82,9 @@ video {
     margin: auto;
     width: 100%;
 
-    // &:hover {
-    //     color: $fourth-color;
-    // }
+    &:hover {
+        color: $fourth-color;
+    }
 }
 
 .center {
