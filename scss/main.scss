@@ -19,6 +19,8 @@ html {
 
 body {
     position: relative;
+    overflow-x: hidden;
+    background: $primary-color;
     font-family: $font-stack;
     cursor: none;
 }
