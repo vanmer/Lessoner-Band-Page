@@ -70,7 +70,7 @@
 
 var circle = document.querySelector(".circle");
 var navLinks = document.querySelectorAll(".grid-item h2");
-var cover = document.querySelectorAll(".grid-item ");
+var icons = document.querySelectorAll(".icon");
 
 TweenLite.set(circle, {
   xPercent: -50,
@@ -94,6 +94,15 @@ navLinks.forEach( link => {
     link.addEventListener('mouseover', () => {
         circle.classList.add('link-grow');
         link.classList.add('hovered-link');
+    })
+})
+
+icons.forEach( icon => {
+    icon.addEventListener('mouseleave', () => {
+        circle.classList.remove('link-grow-s');
+    })
+    icon.addEventListener('mouseover', () => {
+        circle.classList.add('link-grow-s');
     })
 })
 
