@@ -109,9 +109,10 @@
     });
     tl.from(".fill", {
         ease: "circ.out",
-        x: 4000,
+        opacity: 0,
+        // x: 4000,
         stagger: 0.6,
-      })
+      }, "-=0.5")
       .from(".icon", {
         opacity: 0,
         stagger: 0.2,
