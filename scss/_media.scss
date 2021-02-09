@@ -15,6 +15,7 @@
     .card-name {
         font-size: 5.5rem;
     }
+
     .footer .icon {
         font-size: 4rem;
         padding: 0 2rem;
@@ -25,18 +26,35 @@
     .fallback {
         display: block;
     }
+
     .video {
         display: none;
     }
+
     .circle {
-        display: none;
+        width: 0;
     }
+
     .card-name {
         font-size: 4.5rem;
     }
+
     .footer .icon {
         font-size: 3rem;
         padding: 0 1.4rem;
     }
-}
 
+    html,
+    body {
+        cursor: auto;
+        pointer-events: auto;
+    }
+
+    body {
+        cursor: auto;
+    }
+
+    a {
+        cursor: pointer;
+    }
+}
