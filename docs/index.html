@@ -16,31 +16,47 @@
 
     <div class="content">
       <div class="grid-container">
-        <div class="grid-item card" id="band bandcamp">
+        <div class="grid-item card" id="band">
           <a href="https://lessoner.bandcamp.com/">
             <h2 class="card-name middle rellax" data-rellax-speed="1.5" data-rellax-percentage="0.25">
               lessoner
             </h2>
-            <img class="fill full-height dark-filter" src="img/lessoner-three.jpg" alt="Bandcamp" />
+            <img class="fill full-height dark-filter" src="img/bandpic_1.jpg" alt="" />
           </a>
         </div>
 
         <div class="grid-item card" id="exzenter">
-          <a href="https://open.spotify.com/artist/4LfsZKDy9O03VQTxe1pYMI">
+          <a href="https://www.savethescenerecords.de/shop-1/pre-order/">
+            <h2 class="card-name middle rellax" data-rellax-speed="1.5" data-rellax-percentage="0.17">
+              pre-order<br>now!
+            </h2>
             <img class="cover fill" src="img/exzenter-cover.jpg" alt="Exzenter" />
+          </a>
+        </div>
+
+        <div class="grid-item card" id="music-video">
+          <a href="https://www.youtube.com/watch?v=U6KJiHHP6G0">
+            <h2 class="card-name middle rellax" data-rellax-speed="1.5" data-rellax-percentage="-0.25">
+              exzenter<br />music video
+            </h2>
+            <video autoplay muted loop playsinline poster="img/cupido-thumbnail.jpg" class="fill full-height video">
+              <source src="video/exzenter-thumbnail.mp4" />
+              <img src="img/exzenter-thumbnail.jpg" alt="Exzenter Music Video" />
+            </video>
+            <img src="img/exzenter-thumbnail.jpg" class="fill full-height fallback" alt="Exzenter Music Video" />
           </a>
         </div>
 
         <div class="grid-item card" id="live">
           <a href="https://www.youtube.com/watch?v=oX8tDMJqMxc">
-            <h2 class="card-name middle rellax" data-rellax-speed="1.5" data-rellax-percentage="-0.5">
+            <h2 class="card-name middle rellax" data-rellax-speed="1.5" data-rellax-percentage="-0.25">
               arche<br />mimikry
             </h2>
             <video autoplay muted loop playsinline poster="img/cupido-thumbnail.jpg" class="fill full-height video">
               <source src="video/cupido-thumbnail.mp4" />
               <img src="img/cupido-thumbnail.jpg" alt="Arche Mimikry" />
             </video>
-            <img src="img/cupido-thumbnail.jpg" class="fill full-height fallback" alt="arche-mimikry" />
+            <img src="img/cupido-thumbnail.jpg" class="fill full-height fallback" alt="Arche Mimikry" />
           </a>
         </div>
 
@@ -49,13 +65,7 @@
             <h2 class="card-name middle rellax" data-rellax-speed="1.5" data-rellax-percentage="0.1">
               merch
             </h2>
-            <img class="fill full-height dark-filter" src="img/lessoner-merch.jpg" alt="Merch" />
-          </a>
-        </div>
-
-        <div class="grid-item card" id="morgana">
-          <a href="https://open.spotify.com/album/7eyLVtALC8x6b7NmbBx2or">
-            <img class="cover fill" src="img/morgana-cover.jpg" alt="Morgana" />
+            <img class="fill full-height dark-filter" src="img/vinyl.png" alt="Merch" />
           </a>
         </div>
 
@@ -64,7 +74,7 @@
             <h2 class="card-name middle rellax" data-rellax-speed="1.5" data-rellax-percentage="0.25">
               contact
             </h2>
-            <img class="fill full-height dark-filter" src="img/lessoner-one.jpg" alt="Contact" />
+            <img class="fill full-height dark-filter" src="img/bandpic_2.jpg" alt="Contact" />
           </a>
         </div>
 
@@ -88,14 +98,29 @@
           </div>
 
           <div id="facebook">
-            <a href="https://www.facebook.com/Lessoner.band/" title="Facebook">
+            <a href="https://www.facebook.com/lessoner.music" title="Facebook">
               <h2 class="icon"><i class="fa fa-facebook"></i></h2>
             </a>
           </div>
+
+          <div id="facebook">
+            <a href="subpages/info.html" title="Info">
+              <h2 class="icon"><i class="fa fa-info-circle"></i></h2>
+            </a>
+          </div>
+
         </div>
       </div>
     </div>
   </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+    integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
+    crossorigin="anonymous"></script>
+
+  <script>
+    var rellax = new Rellax(".rellax");
+  </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
     integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
@@ -103,16 +128,43 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 
   <script>
-    let tl = gsap.timeline({
+    let tl1 = gsap.timeline({
       defaults: {
         duration: 3,
-      },
+      }
     });
-    tl.from("#exzenter", {
+
+    tl1.to("#band", {
+      ease: "circ.out",
+      autoAlpha: 1,
+      duration: 3,
+    })
+
+    let tl2 = gsap.timeline({
+      defaults: {
+        duration: 3,
+      }
+    });
+
+    tl2.from("#exzenter", {
         scrollTrigger: {
           trigger: "#exzenter",
           start: "-15% center",
           end: "+=10%",
+          scrub: 1.3,
+          // markers: true,
+          toggleActions: "play none none none"
+        },
+        ease: "circ.out",
+        opacity: 0,
+        y: 50,
+        duration: 3,
+      })
+      .from("#music-video", {
+        scrollTrigger: {
+          trigger: "#music-video",
+          start: "-15% center",
+          end: "+=13%",
           scrub: 1.3,
           // markers: true,
           toggleActions: "play none none none"
@@ -150,20 +202,6 @@
         y: 60,
         duration: 3,
       })
-      .from("#morgana", {
-        scrollTrigger: {
-          trigger: "#morgana",
-          start: "-15% center",
-          end: "+=10%",
-          scrub: 1.3,
-          // markers: true,
-          toggleActions: "play none none none"
-        },
-        ease: "circ.out",
-        opacity: 0,
-        y: 60,
-        duration: 3,
-      })
       .from("#contact", {
         scrollTrigger: {
           trigger: "#contact",
@@ -178,28 +216,30 @@
         y: 60,
         duration: 3,
       })
-      .from(".icon", {
+      
+
+    let tl3 = gsap.timeline({
+      defaults: {
+        duration: 1,
+      }
+    });
+
+    tl3.from(".icon", {
         scrollTrigger: {
           trigger: "#contact",
           start: "55% center",
-          end: "+=10%",
+          end: "+=5%",
           scrub: 1.3,
           // markers: true,
           toggleActions: "play none none none"
         },
         opacity: 0,
         stagger: 0.2,
-        duration: 1.2,
+        duration: 1,
       });
   </script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
-    integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
-    crossorigin="anonymous"></script>
 
-  <script>
-    var rellax = new Rellax(".rellax");
-  </script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>

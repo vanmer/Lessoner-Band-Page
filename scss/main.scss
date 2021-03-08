@@ -22,6 +22,7 @@ body {
     overflow-x: hidden;
     background: $primary-color;
     font-family: $font-stack;
+    font-weight: 700;
     cursor: none;
 }
 
@@ -150,12 +151,16 @@ video {
     .icon {
         font-size: 5rem;
         color: $third-color;
-        padding: 0 7rem;
+        padding: 0 4rem;
 
         &:hover {
             color: $fourth-color;
         }
     }
+}
+
+#band {
+    visibility: hidden;
 }
 
 
