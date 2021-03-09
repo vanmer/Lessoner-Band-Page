@@ -2,11 +2,47 @@
     .policy {
         padding: 4rem 5.5rem;
     }
+
+    .circle {
+        width: 0;
+    }
+
+    html,
+    body {
+        cursor: auto;
+        pointer-events: auto;
+    }
+
+    body {
+        cursor: auto;
+    }
+
+    a {
+        cursor: pointer;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .policy {
         padding: 3rem 4rem;
         font-size: 0.9rem;
+    }
+
+    .circle {
+        width: 0;
+    }
+
+    html,
+    body {
+        cursor: auto;
+        pointer-events: auto;
+    }
+
+    body {
+        cursor: auto;
+    }
+
+    a {
+        cursor: pointer;
     }
 }
