@@ -3,8 +3,8 @@
 @import "close";
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html,
@@ -19,15 +19,118 @@ html {
 }
 
 body {
-    position: relative;
-    overflow-x: hidden;
-    background: $primary-color;
-    font-family: $font-stack;
-    font-weight: 300;
-    cursor: none;
-    color: $secondary-color;
+  position: relative;
+  overflow-x: hidden;
+  background: $primary-color;
+  font-family: $font-stack;
+  font-weight: 300;
+  cursor: none;
+  color: $secondary-color;
 }
 
 .policy {
-    padding: 0 2rem;
+  padding: 4rem 8rem;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+.dsvgo {
+  column-count: 1;
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+
+    &::-moz-selection {
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
+
+    &::selection {
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
+  }
+
+  h3,
+  h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1.5rem 0 1.5rem 0;
+
+    &::-moz-selection {
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
+
+    &::selection {
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
+  }
+
+  p::-moz-selection {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+
+  p::selection {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+
+  span::-moz-selection {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+
+  span::selection {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+
+  ul {
+    padding: 1rem 0 1rem 0;
+
+    li {
+      margin-left: 1.5rem;
+
+      &::-moz-selection {
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
+
+      &::selection {
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
+    }
+  }
+
+  .objection {
+    padding-top: 1rem;
+
+    strong {
+      font-weight: 500;
+
+      &::-moz-selection {
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
+
+      &::selection {
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
 }
