@@ -1,0 +1,12 @@
+.close {
+    position: fixed;
+    // width: 2rem;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 2;
+    // visibility: hidden;
+
+    img {
+        width: 3.5rem;
+    }
+}
