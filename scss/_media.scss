@@ -20,6 +20,24 @@
         font-size: 4rem;
         padding: 0 2rem;
     }
+
+    .circle {
+        width: 0;
+    }
+
+    html,
+    body {
+        cursor: auto;
+        pointer-events: auto;
+    }
+
+    body {
+        cursor: auto;
+    }
+
+    a {
+        cursor: pointer;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -31,10 +49,6 @@
         display: none;
     }
 
-    .circle {
-        width: 0;
-    }
-
     .card-name {
         font-size: 4.5rem;
     }
@@ -42,6 +56,10 @@
     .footer .icon {
         font-size: 2.75rem;
         padding: 0 1rem;
+    }
+
+    .circle {
+        width: 0;
     }
 
     html,
