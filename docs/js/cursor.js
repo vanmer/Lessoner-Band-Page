@@ -2,6 +2,7 @@ var circle = document.querySelector(".circle");
 var navLinks = document.querySelectorAll(".grid-item h2");
 var icons = document.querySelectorAll(".icon");
 var covers = document.querySelectorAll(".cover");
+var aboutLinks = document.querySelectorAll(".dsvgo a");
 
 TweenLite.set(circle, {
   xPercent: -50,
@@ -15,7 +16,7 @@ function moveCircle(e) {
     x: e.clientX,
     y: e.clientY
   });
-}
+};
 
 navLinks.forEach( link => {
     link.addEventListener('mouseleave', () => {
@@ -26,7 +27,7 @@ navLinks.forEach( link => {
         circle.classList.add('link-grow');
         // link.classList.add('hovered-link');
     })
-})
+});
 
 covers.forEach( cover => {
     cover.addEventListener('mouseleave', () => {
@@ -35,7 +36,7 @@ covers.forEach( cover => {
     cover.addEventListener('mouseover', () => {
         circle.classList.add('link-grow-m');
     })
-})
+});
 
 icons.forEach( icon => {
     icon.addEventListener('mouseleave', () => {
@@ -44,5 +45,14 @@ icons.forEach( icon => {
     icon.addEventListener('mouseover', () => {
         circle.classList.add('link-grow-s');
     })
-})
+});
+
+aboutLinks.forEach( link => {
+    link.addEventListener('mouseleave', () => {
+        circle.classList.remove('link-grow-s');
+    })
+    link.addEventListener('mouseover', () => {
+        circle.classList.add('link-grow-s');
+    })
+});
 

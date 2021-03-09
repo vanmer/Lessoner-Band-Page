@@ -126,9 +126,28 @@ body {
     }
   }
 
+  a {
+    color: $secondary-color;
+    text-decoration: underline;
 
+    &:hover {
+      text-decoration: line-through;
+    }
 
+    &::-moz-selection {
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
 
+    &::selection {
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
+  }
+
+  .source {
+    padding-top: 1.5rem;
+  }
 
 
 
