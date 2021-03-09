@@ -1,11 +1,22 @@
 .close {
     position: fixed;
     top: 1.5rem;
-    right: 2rem;
+    right: 1.5rem;
     z-index: 2;
     // visibility: hidden;
 
     img {
-        width: 3rem;
+        width: 2.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .close {
+        top: 1.5rem;
+        right: 1.5rem;
+
+        img {
+            width: 2rem;
+        }
     }
 }
