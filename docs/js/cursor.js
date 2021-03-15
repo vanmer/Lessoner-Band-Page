@@ -40,10 +40,10 @@ navLinks.forEach( link => {
 
 icons.forEach( icon => {
     icon.addEventListener('mouseleave', () => {
-        circle.classList.remove('link-grow-s');
+        circle.classList.remove('link-grow-m');
     })
     icon.addEventListener('mouseover', () => {
-        circle.classList.add('link-grow-s');
+        circle.classList.add('link-grow-m');
     })
 });
 
