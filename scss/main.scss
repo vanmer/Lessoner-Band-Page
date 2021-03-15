@@ -80,7 +80,7 @@ video {
 }
 
 .card-name {
-    position: absolute;
+    // position: absolute;
     font-size: 8rem;
     line-height: 1;
     margin: auto;
@@ -150,6 +150,7 @@ video {
     background: $primary-color;
 
     .icon {
+        // position: relative;
         font-size: 5rem;
         color: $third-color;
         padding: 0 4rem;

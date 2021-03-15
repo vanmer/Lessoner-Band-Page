@@ -1,7 +1,7 @@
 var circle = document.querySelector(".circle");
 var navLinks = document.querySelectorAll(".grid-item h2");
 var icons = document.querySelectorAll(".icon");
-var covers = document.querySelectorAll(".cover");
+// var covers = document.querySelectorAll(".cover");
 var aboutLinks = document.querySelectorAll(".dsvgo a");
 
 TweenLite.set(circle, {
@@ -29,14 +29,14 @@ navLinks.forEach( link => {
     })
 });
 
-covers.forEach( cover => {
-    cover.addEventListener('mouseleave', () => {
-        circle.classList.remove('link-grow-m');
-    })
-    cover.addEventListener('mouseover', () => {
-        circle.classList.add('link-grow-m');
-    })
-});
+// covers.forEach( cover => {
+//     cover.addEventListener('mouseleave', () => {
+//         circle.classList.remove('link-grow-m');
+//     })
+//     cover.addEventListener('mouseover', () => {
+//         circle.classList.add('link-grow-m');
+//     })
+// });
 
 icons.forEach( icon => {
     icon.addEventListener('mouseleave', () => {
