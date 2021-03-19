@@ -3,6 +3,7 @@ var navLinks = document.querySelectorAll(".grid-item h2");
 var icons = document.querySelectorAll(".icon");
 // var covers = document.querySelectorAll(".cover");
 var aboutLinks = document.querySelectorAll(".dsvgo a");
+var cookieButtons = document.querySelectorAll(".cookie-btn");
 
 TweenLite.set(circle, {
   xPercent: -50,
@@ -56,3 +57,12 @@ aboutLinks.forEach( link => {
     })
 });
 
+
+cookieButtons.forEach( button => {
+    button.addEventListener('mouseleave', () => {
+        circle.classList.remove('link-grow-s');
+    })
+    button.addEventListener('mouseover', () => {
+        circle.classList.add('link-grow-s');
+    })
+});

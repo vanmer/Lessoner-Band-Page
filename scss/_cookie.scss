@@ -1,3 +1,5 @@
+@import "config";
+
 #footer-cookie,
 #footer-cookie * {
   box-sizing: border-box;
@@ -13,16 +15,27 @@
   padding-left: 30px;
   padding-right: 30px;
   line-height: 60px;
-  background: #303030;
-  color: #fff;
+  background: $primary-color;
+  color: $secondary-color;
+  z-index: 2;
+  font-weight: 300;
+  font-size: 0.85rem;
 }
 
 #footer-cookie a {
-  color: #fff;
+  color: $secondary-color;
 }
 
 #footer-cookie #description {
-  float: left;
+  // float: left;
+  line-height: 1.4;
+
+  a {
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: line-through;
+  }
 }
 
 #footer-cookie #accept {
@@ -33,9 +46,15 @@
   border: 1px solid #fff;
   padding: 5px 10px;
   text-decoration: none;
+  font-weight: 700;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   #footer-cookie {
     padding-top: 30px;
     padding-bottom: 30px;
